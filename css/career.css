@@ -1,10 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
+
 
 /* Phần giới thiệu */
 #phan_tren img{
@@ -44,11 +38,6 @@
     color: #374f8a;
 }
 
-/* Kết thúc phần trên */
-
-#fullpage{
-    margin-top: 80px !important;
-}
 
 .section{
     position: relative;
@@ -68,9 +57,11 @@
     color: #df0218;
 }
 
-.section .s1{
-    height: 500px;
-    margin-top: 100px;
+.hoc_thuat .fp-slides, .nghe_nghiep .fp-slides {
+    top: 15%;
+}
+.hoc_thuat .fp-next, .nghe_nghiep .fp-next{
+    right: 40px;
 }
 
 .section-content {
@@ -93,7 +84,9 @@
     display: inline-flex;
     margin: 0 30px;
 }
-
+.hoc_thuat .section{
+    margin-top: 30vh;
+}
 .image .img1, .image .img2, .image .img3{
     width: 400px;
     height: 300px;
@@ -103,6 +96,7 @@
     background-image: url('../images/Logo_VKU2.jpg');
     background-size: 70%;
     background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .slide .card:hover{
@@ -178,4 +172,10 @@
 
 .carousel-item {
     transition: opacity 0.5s ease-in-out;
+}
+
+.nghe_nghiep .main1,
+.hoc_thuat .main1{
+    /* overflow: hidden; */
+    /* height: 400px; */
 }
